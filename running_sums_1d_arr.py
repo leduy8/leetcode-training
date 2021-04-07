@@ -1,10 +1,17 @@
+from typing import List
 
 # * https://leetcode.com/problems/running-sum-of-1d-array/
 
-def running_sum(nums):
+
+def running_sum(nums: List[int]) -> List[int]:
     res = []
+    cur_arr = []
+
     for num in nums:
-        pass
+        cur_arr.append(num)
+        res.append(sum(cur_arr))
+
+    return res
 
 
-running_sum([1,2,3,4])
+print(running_sum([1, 2, 3, 4]))

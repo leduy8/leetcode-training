@@ -2,7 +2,7 @@
 # * https://leetcode.com/problems/count-primes/
 
 
-def count_primes(limit):
+def count_primes(limit: int) -> int:
     if limit <= 2:
         return 0
     elif limit == 3:
