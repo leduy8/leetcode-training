@@ -1,5 +1,6 @@
 from typing import List
 
+# * https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
 def smaller_numbers_than_current(nums: List[int]) -> List[int]:
     res = []
