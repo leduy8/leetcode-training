@@ -1,1 +1,1 @@
-This repo is made specifically for python learning with Leetcode exercises.
+This repo is made specifically for training data structure and algorithms with Leetcode exercises.
