@@ -1,3 +1,5 @@
+# * https://leetcode.com/problems/consecutive-characters/
+
 def maxPower(s: str) -> int:
     if s is None:
         return -1
