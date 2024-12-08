@@ -19,6 +19,7 @@ Data Structure & Algorithms
 136: https://leetcode.com/problems/single-number/
 167: https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
 169: https://leetcode.com/problems/majority-element/
+202: https://leetcode.com/problems/happy-number/
 204: https://leetcode.com/problems/count-primes/
 217: https://leetcode.com/problems/contains-duplicate/
 242: https://leetcode.com/problems/valid-anagram/description/
