@@ -1,0 +1,14 @@
+Data Structure & Algorithms
+
+136: https://leetcode.com/problems/single-number/
+268: https://leetcode.com/problems/missing-number/
+
+
+SQL
+
+175: https://leetcode.com/problems/combine-two-tables/
+626: https://leetcode.com/problems/exchange-seats
+1393: https://leetcode.com/problems/capital-gainloss/
+1693: https://leetcode.com/problems/daily-leads-and-partners/
+1741: https://leetcode.com/problems/find-total-time-spent-by-each-employee/
+1757: https://leetcode.com/problems/recyclable-and-low-fat-products/

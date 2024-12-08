@@ -1,5 +1,7 @@
 package main
 
+// * https://leetcode.com/problems/missing-number/
+
 import (
 	"fmt"
 	"slices"
