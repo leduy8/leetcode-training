@@ -22,6 +22,7 @@ Data Structure & Algorithms
 202: https://leetcode.com/problems/happy-number/
 204: https://leetcode.com/problems/count-primes/
 217: https://leetcode.com/problems/contains-duplicate/
+231: https://leetcode.com/problems/power-of-two/
 242: https://leetcode.com/problems/valid-anagram/description/
 268: https://leetcode.com/problems/missing-number/
 347: https://leetcode.com/problems/top-k-frequent-elements/
@@ -53,11 +54,13 @@ Data Structure & Algorithms
 1929: https://leetcode.com/problems/concatenation-of-array/
 2011: https://leetcode.com/problems/final-value-of-variable-after-performing-operations/
 2160: https://leetcode.com/problems/minimum-sum-of-four-digit-number-after-splitting-digits/
+2181: https://leetcode.com/problems/merge-nodes-in-between-zeros/
 2279: https://leetcode.com/problems/maximum-bags-with-full-capacity-of-rocks/
 2325: https://leetcode.com/problems/decode-the-message/
 2413: https://leetcode.com/problems/smallest-even-multiple/
 2469: https://leetcode.com/problems/convert-the-temperature/
 2535: https://leetcode.com/problems/difference-between-element-sum-and-digit-sum-of-an-array/
+3110: https://leetcode.com/problems/score-of-a-string/description/
 
 
 SQL
