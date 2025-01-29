@@ -3,19 +3,19 @@
 
 class Stack:
     def __init__(self) -> None:
-        self.arr = []
-        self.size = 0
+        self._arr = []
+        self._size = 0
 
     def push(self, item):
-        self.arr.append(item)
-        self.size += 1
+        self._arr.append(item)
+        self._size += 1
 
     def pop(self):
         if self.is_empty():
             return 'Stack is empty'
 
-        pop = self.arr.pop()
-        self.size -= 1
+        pop = self._arr.pop()
+        self._size -= 1
 
         return pop
 
@@ -23,23 +23,23 @@ class Stack:
         if self.is_empty():
             return 'Stack is empty'
 
-        return self.arr[-1]
+        return self._arr[-1]
 
     def is_empty(self):
-        return self.size <= 0
+        return self._size <= 0
 
 
 def isValid(s: str) -> bool:
     stack = Stack()
 
-    for ch in s:
-        if is_left_bracket(ch):
-            stack.push(ch)
-        elif is_right_bracket(ch):
+    for c in s:
+        if is_left_bracket(c):
+            stack.push(c)
+        elif is_right_bracket(c):
             item = stack.pop()
             if item == 'Stack is empty':
                 return False
-            if not is_match_brackets(item, ch):
+            if not is_match_brackets(item, c):
                 return False
 
     if not stack.is_empty():
@@ -59,15 +59,14 @@ def is_right_bracket(ch):
 
 
 def is_match_brackets(left, right):
-    left_brackets = ['{', '(', '[', '<']
-    right_brackets = ['}', ')', ']', '>']
-    return True if left_brackets.index(left) == right_brackets.index(right) else False
+    valid_parentheses = [('[', ']'), ('{','}'), ('(', ')'), ('<', '>')]
+    return True if (left, right) in valid_parentheses else False
 
 
-print(isValid('()'))
-print(isValid('()[]{}'))
-print(isValid('(]'))
-print(isValid('([)]'))
-print(isValid('{[]}'))
-print(isValid(')'))
-print(isValid('['))
+print(isValid('()')) # True
+print(isValid('()[]{}')) # True
+print(isValid('(]')) # False
+print(isValid('([)]')) # False
+print(isValid('{[]}')) # True
+print(isValid(')')) # False
+print(isValid('[')) # False
