@@ -3,18 +3,15 @@ from typing import List
 # * https://leetcode.com/problems/how-many-numbers-are-smaller-than-the-current-number/
 
 def smaller_numbers_than_current(nums: List[int]) -> List[int]:
-    res = []
-    count = 0
+    num_bigger_counter = {}
+    sorted_num = sorted(nums)
 
-    for num in nums:
-        for num_2 in nums:
-            if num_2 < num:
-                count += 1
-        res.append(count)
-        count = 0
+    for i, num in enumerate(sorted_num):
+        num_bigger_counter.setdefault(num, i)
 
-    return res
+    return [num_bigger_counter.get(n) for n in nums]
 
 
-print(smaller_numbers_than_current([6, 5, 4, 8]))
-print(smaller_numbers_than_current([7, 7, 7, 7]))
+print(smaller_numbers_than_current(nums = [8, 1, 2, 2, 3]))
+print(smaller_numbers_than_current(nums = [6, 5, 4, 8]))
+print(smaller_numbers_than_current(nums = [7, 7, 7, 7]))
